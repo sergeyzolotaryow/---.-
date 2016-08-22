@@ -1,0 +1,161 @@
+     @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro&subset=latin,latin-ext,vietnamese);/*Устанавливаем шрифт Source Sans Pro из сервера Google для всех элементов, кроме заголовков*/
+     @import url(https://fonts.googleapis.com/css?family=Montserrat:700);/*Устанавливаем шрифт Montserrat из сервера Google для заголовков*/
+
+     html{/*Для всех элементов, кроме заголовков*/
+	   font-family: 'Source Sans Pro', sans-serif;/*Шрифт Source Sans Pro*/
+	 }
+
+	 body{
+     	margin:0px;
+     }
+	 /*Верхняя часть*/
+     div.header{
+		background-color:#ff0000;/*Красный фон*/
+		z-index:1;
+      }
+	  /*Логотип*/
+      div.logotype{
+      	background-color:#ff0000;/*Красный фон*/
+      }
+      p.logotype{/*Заголовок сайта*/
+       color:#ffffff;/*Белый текст*/
+       font-size:48pt;/*Размер шрифта*/
+       font-weight:bold;
+      }
+      .menu{
+        color:#000000;/*Тёмный текст*/
+        width:216px;/*Ширина колонки с навигационным меню*/
+        height:auto;
+
+       }
+      a{
+        color:#000000;/*Тёмный текст*/
+        text-decoration:underline;/*Подчеркнутый текст ссылки*/
+      }
+      div.content{/*Колонка со статьей*/
+      	position:absolute;/*Абсолютное позиционирование*/
+      	left:331px;/*Левое расположение блока, который идет справа, составляет 331 пиксель*/
+        top:104px;/*Верхнее расположение блока, который идет вниз, составляет 104 пикселей*/
+        font-size:16px;
+		width:719px;
+		height:619px;
+		overflow-y:scroll;
+
+       }
+      .post{/*Статья*/
+        color:#000000;/*Тёмный текст*/
+        display:block;
+
+      }
+      div.right{/*Правая колонка*/
+      	position:absolute;/*Относительное позиционирование*/
+      	right:0;/*Расположение блока справа*/
+        top:101px;/*Верхнее расположение блока, который идет вниз, составляет 104 пикселей*/
+        width:223px;
+        height:auto;
+
+      }
+      .ssylka_right{/*Ссылки для правой колонки*/
+      	color:#000000;/*Тёмный текст*/
+      	text-decoration:none;/*Если курсор не наведен, идет без подчеркивания*/
+		display:block;/*Блочный дисплей*/
+      }
+      :hover.ssylka_right{/*Наведение курсора на ссылку для правой колонки*/
+      	color:#000000;/*Тёмный текст*/
+      	text-decoration:underline;/*Если курсор наведен, идет с подчеркиванием*/
+      }
+	  :visited.ssylka_right{/*Для посещенных ссылок*/
+	     color:#ff0000;/*Красный цвет*/
+	   }
+/*Стили ссылки на страницу входа*/
+      .button_login{/*Кнопка с белым фоном*/
+         background-color:#ffffff;/*Белый фон*/
+         width:441px;/*Ширина кнопки*/
+         height:40px;/*Высота кнопки*/
+         position:absolute;/*Абсолютное позиционирование*/
+      	 right:3px;/*Расположение блока справа*/
+         top:13px;/*Нулевое верхнее расположение*/
+      }
+ 
+     strong  hgroup h2 h3{/*Согласно концепций Web 2.0 заголовки используют второй шрифт для элементов*/
+         font-family: 'Montserrat', sans-serif;/*Используем шрифт Montserrat из гугла для всех заголовков, код с адресом для загрузки показан в первых строках.*/
+     }
+	 /*Если ссылка без отдельного класса, то можно их украсить*/
+	   a{/*Только для этого элемента*/
+	     color:#000000;/*Тёмный текст*/
+		 text-decoration:none;/*Если курсор не наведен, идет без подчеркивания*/
+	   }
+	   /*Если вы навели курсор на ссылку, используется псевдокласс :hover*/
+	   a:hover{
+	     text-decoration:underline;/*Если курсор наведен, идет с подчеркиванием*/
+	   }
+/*Для цитат*/
+       q{
+	     font-style:italic;/*Курсив*/
+	   }
+/* Я хочу использовать стили для лент статей */
+       a.news_lenta{/*Для ссылок на статьи*/
+	     color:#ff0000;/*Красный текст*/
+		 text-decoration:none;/*Если курсор не наведен, идет без подчеркивания*/
+		 font-size:28px;/*Размер*/
+	   }
+	   a:hover.news_lenta{
+	     text-decoration:underline;/*Если курсор наведен, идет с подчеркиванием*/
+	   }
+	   p.news_lenta{/*Для кратких описаний*/
+		 font-size:14px;/*Размер*/
+	   }
+
+
+	   a.back{
+	     color:#ff0000;/*Красный текст*/
+		 text-decoration:none;/*Если курсор не наведен, идет без подчеркивания*/
+		 font-size:23px;/*Размер*/
+		 z-index:1;
+	   }
+	   a:hover.back{
+	     text-decoration:underline;/*Если курсор наведен, идет с подчеркиванием*/
+	   }
+	   .itmayknow{/*Значок "Это важно знать"*/
+	   	   background-color:#ff0000;/*Красный фон*/
+	   	   color:#ffffff;/*Белый текст*/
+	   	   width:128px;
+           height:27px;
+           text-transform:capitalize;
+        }
+        q{
+        	quotes: "\201c" "\201d"; /* Кавычки в виде двойных угловых скобок */
+        	font-size:18px;
+        	color:#808080;
+			display:block;
+        }
+        .quotes{
+        	color:#808080;
+        	font-size:13pt;
+        }
+        .copyright{
+        	color:#ffffff;/*Белый текст*/
+        	font-style:normal;
+        }
+        .feedback{
+        	color:#ffffff;/*Белый текст*/
+        	position:absolute;
+        	right:0px;
+        	bottom:2px;
+        }
+		.bottom{
+		   background-color:#000000;
+		   color:#ffffff;
+		   position:absolute;
+		   bottom:3px;
+		   width:1594px;
+		   height:71px;
+		}
+		.bottom_link{
+		    color:#ffffff;
+		}
+
+
+
+
+
